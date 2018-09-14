@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<script>
+	function openSection(section) {
+		console.log(section);
+		var x = document.getElementById("about");
+		if ( section == 'about' )
+		{
+	    	document.getElementById("about").style.display = "block";
+	    	document.getElementById("listen").style.display = "none";
+	    	document.getElementById("contact").style.display = "none";
+		}
+		else if ( section == "listen" )
+		{
+	    	x = document.getElementById("listen");
+	    	x.style.display = "block";
+	    	document.getElementById("about").style.display = "none";
+	    	document.getElementById("contact").style.display = "none";
+		}
+		else if ( section == "contact" )
+		{
+	    	x = document.getElementById("contact");
+	    	x.style.display = "block";
+	    	document.getElementById("listen").style.display = "none";
+	    	document.getElementById("about").style.display = "none";
+		}
+
+		console.log(x)
+	}
+
+</script>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="banner2">
+		<img src="HeadFirstCutout.png" width=100%>
+	</div>
+
+	<div class="content">
+
+
+		<ul>
+			<li onclick="openSection('about')">about</button></li>
+			|
+			<li onclick="openSection('listen')">listen</li>
+			|
+			<li onclick="openSection('contact')">contact</li>
+		</ul>
+
+	<div id="about" display=none>
+		<span style="margin-left:2em">Head First is a podcast created by Austin Shannon. </span>Austin studied Philosophy at California State University: Fullerton, and has decided to continue his education by diving - <i>head first</i> - into the most challenging and thought-provoking social issues of our time.
+	</div>
+
+	<div id="listen">
+
+	 <div class="post">
+	 	<h1>Episode 1</h1>
+	 	<p>Austin discusses poop and farts, and how to use your tears to battle Satan. Austin discusses poop and farts, and how to use your tears to battle Satan. Austin discusses poop and farts, and how to use your tears to battle Satan. Austin discusses poop and farts, and how to use your tears to battle Satan. Austin discusses poop and farts, and how to use your tears to battle Satan. Austin discusses poop and farts, and how to use your tears to battle Satan. Austin discusses poop and farts, and how to use your tears to battle Satan. Austin discusses poop and farts, and how to use your tears to battle Satan. Austin discusses poop and farts, and how to use your tears to battle Satan. Austin discusses poop and farts, and how to use your tears to battle Satan. Austin discusses poop and farts, and how to use your tears to battle Satan.</p>
+	 	<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/473540640&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+	 </div>
+	 <br>
+	 <div class="post">
+	 	<h1>Episode 2</h1>
+	 	<p>Austin talks to his mother about God, and why she tried to sacrifice him with a knife. Austin talks to his mother about God, and why she tried to sacrifice him with a knife. Austin talks to his mother about God, and why she tried to sacrifice him with a knife. Austin talks to his mother about God, and why she tried to sacrifice him with a knife. Austin talks to his mother about God, and why she tried to sacrifice him with a knife. Austin talks to his mother about God, and why she tried to sacrifice him with a knife. Austin talks to his mother about God, and why she tried to sacrifice him with a knife. Austin talks to his mother about God, and why she tried to sacrifice him with a knife. Austin talks to his mother about God, and why she tried to sacrifice him with a knife.</p>
+	 	<iframe width="100%" src="https://www.youtube.com/embed/LAX9fg1ot7E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	 </div>
+	 <br>
+	 <div class="post">
+	 	<h1>Episode 3</h1>
+	 	<p>Austin uses his tarot cards to battle a spider in the basement. He also wears a crown of thorns and sticks toothpicks in his eyes. Austin uses his tarot cards to battle a spider in the basement. He also wears a crown of thorns and sticks toothpicks in his eyes. Austin uses his tarot cards to battle a spider in the basement. He also wears a crown of thorns and sticks toothpicks in his eyes. Austin uses his tarot cards to battle a spider in the basement. He also wears a crown of thorns and sticks toothpicks in his eyes. Austin uses his tarot cards to battle a spider in the basement. He also wears a crown of thorns and sticks toothpicks in his eyes. Austin uses his tarot cards to battle a spider in the basement. He also wears a crown of thorns and sticks toothpicks in his eyes. Austin uses his tarot cards to battle a spider in the basement. He also wears a crown of thorns and sticks toothpicks in his eyes. </p>
+	 </div>
+
+	</div>
+
+	<div id="contact">
+	headfirstpodcast@gmail.com
+	</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
